@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VISIONX // Neural Vision System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<div class="scanlines"></div>
+<header>
+  <div class="brand"><span class="pulse"></span> VISION<span>X</span></div>
+  <div class="status"><i></i> SYSTEM ONLINE</div>
+</header>
+
+<main>
+<section class="hero">
+  <div>
+    <p class="eyebrow">NEURAL VISION // REAL-TIME INTELLIGENCE</p>
+    <h1>SEE THE<br><span>UNSEEN.</span></h1>
+    <p class="sub">Object detection, tracking and visual analytics — engineered as one real-time system.</p>
+  </div>
+  <div class="reticle"><div class="cross"></div><div class="circle">VISION<br>01</div></div>
+</section>
+
+<section class="metrics">
+  <article><small>ACTIVE OBJECTS</small><strong id="active">00</strong></article>
+  <article><small>UNIQUE TRACKS</small><strong id="unique">00</strong></article>
+  <article><small>PEOPLE</small><strong id="people">00</strong></article>
+  <article><small>LATENCY</small><strong id="latency">-- ms</strong></article>
+</section>
+
+<section class="workspace">
+  <div class="panel">
+    <div class="panel-head"><span>◢ INFERENCE TERMINAL</span><span>YOLO11N</span></div>
+    <div class="dropzone" id="drop">
+      <div class="target">⌁</div>
+      <h2>DROP IMAGE</h2>
+      <p>or select a frame for neural inference</p>
+      <input id="file" type="file" accept="image/*">
+      <button id="run">RUN DETECTION</button>
+    </div>
+    <div id="result" class="result hidden">
+      <img id="preview" alt="Detection result">
+      <div id="detections"></div>
+    </div>
+  </div>
+  <aside class="panel log">
+    <div class="panel-head"><span>◢ SYSTEM LOG</span><span>LIVE</span></div>
+    <pre id="log">[BOOT] VISIONX kernel initialized
+[BOOT] Waiting for visual input...
+[CORE] Detector: YOLO11N
+[CORE] Tracker: Centroid Association
+[CORE] Analytics: ONLINE
+[SYS ] All systems nominal.</pre>
+  </aside>
+</section>
+</main>
+<script src="/static/app.js"></script>
+</body>
+</html>
