@@ -1,11 +1,11 @@
 # 🔴 VISIONX
-## Real-Time Computer Vision Intelligence Platform
+## BLACK / RED PERFORMANCE COMPUTER VISION SYSTEM
 
 <div align="center">
 
 **SEE. TRACK. ANALYZE. RESPOND.**
 
-A production-style computer vision system that turns live video into structured intelligence.
+A high-performance computer vision system built around precision, speed and visual intelligence.
 
 ![Python](https://img.shields.io/badge/Python-0A0A0A?style=for-the-badge&logo=python&logoColor=FF1744)
 ![YOLO](https://img.shields.io/badge/YOLO-0A0A0A?style=for-the-badge&logo=yolo&logoColor=FF1744)
@@ -35,7 +35,7 @@ It combines YOLO object detection, OpenCV video processing, lightweight tracking
 - 📈 Live FPS / latency telemetry
 - 🎥 Webcam and video-file pipelines
 - 🔌 REST + WebSocket APIs
-- 🖥️ Futuristic browser dashboard
+- 🖥️ Black/red performance dashboard
 - 🐳 Docker-ready deployment
 - 🧪 Automated tests
 
