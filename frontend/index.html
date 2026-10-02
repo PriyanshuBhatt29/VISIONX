@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
-<div class="grain"></div>
+<div class="grain"></div><div class="scanline"></div><div class="cursor-glow" id="cursorGlow"></div>
 <header>
   <div class="brand">V<span>X</span></div>
   <div class="nav"><span>VISIONX</span><span>AI PERFORMANCE SYSTEM</span><b><i></i> LIVE</b></div>
@@ -35,11 +35,11 @@
 <section class="workspace">
 <div class="panel main-panel">
   <div class="panel-head"><span>01 / VISUAL INFERENCE</span><b>YOLO11N</b></div>
-  <div class="dropzone" id="drop">
+  <div class="dropzone" id="drop"><div class="scan-status"><span></span> SYSTEM READY</div>
     <div class="icon">VX</div><h2>LOAD VISUAL INPUT</h2><p>Drop an image or select a frame for AI analysis.</p>
-    <input id="file" type="file" accept="image/*"><button id="run">RUN INFERENCE <span>↗</span></button>
+    <input id="file" type="file" accept="image/*"><button id="run">RUN INFERENCE <span>↗</span></button><div class="progress"><i id="progressBar"></i></div>
   </div>
-  <div id="result" class="result hidden"><img id="preview" alt="Detection result"><div id="detections"></div></div>
+  <div class="result-head"><span>DETECTION OUTPUT</span><b id="resultCount">00 OBJECTS</b></div><div id="result" class="result hidden"><img id="preview" alt="Detection result"><div id="detections"></div></div>
 </div>
 <aside class="panel log"><div class="panel-head"><span>02 / TELEMETRY</span><b>ONLINE</b></div><pre id="log">SYSTEM / VISIONX
 ────────────────────
